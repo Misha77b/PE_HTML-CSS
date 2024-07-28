@@ -11,8 +11,18 @@ button {
     cursor: pointer;
 }
 
+h2 {
+    text-align: center;
+    font-size: 27px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
 .header {
     background-image: url(../images/header-background.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .header-menu {
@@ -70,3 +80,44 @@ button {
     font-weight: 700;
     color: #FFF;
 }
+
+.header-btn-wrapper {
+    margin-top: 44px;
+    padding-bottom: 74px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.header-btn {
+    padding: 16px 0;
+    width: 170px;
+    color: #FFF;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.header-btn:hover {
+    scale: 1.1;
+    transition: 0.3s;
+}
+
+.header-green-btn  {
+    background-color: #89CA62;
+}
+
+.header-blue-btn {
+    background-color: #14B9D5;
+}
+
+.popular-posts {
+    background-color: #F2F2F2;
+}
+
+.popular-posts-title {
+    padding-top: 49px;
+    color: #18B4CF;
+}
+

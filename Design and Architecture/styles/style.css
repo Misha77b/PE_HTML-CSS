@@ -43,6 +43,7 @@ h2 {
     font-size: 22px;
     font-weight: 700;
     color: #FFF;
+    text-transform: capitalize;
 }
 
 .header-menu-list {

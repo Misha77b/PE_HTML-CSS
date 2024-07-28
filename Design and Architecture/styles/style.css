@@ -144,3 +144,64 @@ h2 {
     font-weight: 700;
     color: #353A3D;
 }
+
+.popular-clients {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 106px;
+    background-image: url(../images/clients-background.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.popular-clients-title {
+    position: relative;
+    color: #FFF;
+}
+
+.popular-clients-title::after {
+    position: absolute;
+    content: "";
+    top: 90px;
+    right: 50%;
+    transform: translateX(50%);
+    width: 60px;
+    height: 3px;
+    border: none;
+    background-color: #18B4CF;
+    color: #FFF;
+}
+
+.popular-clients-logos {
+    margin-top: 200px;
+    padding-bottom: 200px;
+    display: grid;
+    column-gap: 58px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.popular-client-logo-img {
+    justify-self: center;
+    align-self: center;
+}
+
+.top-rated {
+    padding-top: 50px;
+}
+
+.top-rated-title {
+    color: #18B4CF;
+}
+
+.top-rated-content {
+    margin-top: 55px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.top-rated-img {
+    width: 100%;
+}

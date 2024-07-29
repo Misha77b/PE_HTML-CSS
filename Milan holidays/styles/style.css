@@ -71,3 +71,52 @@ a {
 .contact-link:hover {
     color: #F26522;
 }
+
+.main {
+    margin-top: 20px;
+}
+
+.cards-wrapper {
+    width: 1028px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 37px 62px;
+}
+
+.holiday-card {
+    width: 300px;
+    cursor: pointer;
+}
+
+.card-info {
+    position: relative;
+}
+
+.card-img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.card-content {
+    bottom: 0;
+    width: 100%;
+    position: absolute;
+    padding: 7px 15px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #F26522;
+    box-sizing: border-box;
+    color: #FFF;
+}
+
+.card-title {
+    padding-top: 20px;
+    text-align: center;
+    font-size: 18px;
+    color: #FFF;
+}
+
+.holiday-card:hover .card-title {
+    color: #F26522;
+}

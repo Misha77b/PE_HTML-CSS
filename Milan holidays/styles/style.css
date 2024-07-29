@@ -99,15 +99,41 @@ a {
 }
 
 .card-content {
-    bottom: 0;
+    display: flex;
     width: 100%;
     position: absolute;
-    padding: 7px 15px;
-    display: flex;
+    padding: 7px 15px 12px 15px;
     justify-content: space-between;
     background-color: #F26522;
     box-sizing: border-box;
     color: #FFF;
+    bottom: 0;
+    transition: 0.5s;
+    scale: 0;
+}
+
+.viev-details {
+    display: flex;
+    align-items: flex-end;
+}
+
+.viev-details-text::after {
+    padding-left: 16px;
+    content: url(../images/vector.png);
+}
+
+.holiday-card:hover .card-content {
+    transition: 0.5s;
+    scale: 1;
+}
+
+.price-details {
+    font-size: 10px;
+}
+
+.price-sum {
+    margin-top: 8px;
+    font-size: 20px;
 }
 
 .card-title {
@@ -119,4 +145,14 @@ a {
 
 .holiday-card:hover .card-title {
     color: #F26522;
+}
+
+.footer {
+    margin: 50px auto 20px;
+}
+
+.footer-text {
+    text-align: center;
+    font-size: 12px;
+    color: #FFF;
 }

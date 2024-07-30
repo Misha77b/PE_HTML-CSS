@@ -122,8 +122,9 @@ button {
 }
 
 .media-btn {
-    /* text-align: center; */
-    /* padding: 17px 0; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     width: 160px;
     height: 48px;
     font-size: 16px;
@@ -140,8 +141,36 @@ button {
     background-color: #DF4A32;
 }
 
-/* .facebook-logo {
-} */
+.facebook-btn:hover {
+    background-color: #022263;
+}
+
+.google-btn:hover {
+    background-color: #AB1F09;
+}
+
+.media-name {
+    position: relative;
+    padding-right: 27px;
+}
+
+.media-name::before {
+    top: 50%;
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 28px;
+    transform: translateY(-50%);
+    background-color: rgba(43, 13, 9, 0.1);
+}
+
+.facebook-name::before {
+    left: -18px;
+}
+
+.google-name::before {
+    left: -30px;
+}
 
 .divider {
     position: relative;
@@ -151,6 +180,7 @@ button {
     font-size: 14px;
     color: #848484;
 }
+
 .divider::after, 
 .divider::before {
     position: absolute;

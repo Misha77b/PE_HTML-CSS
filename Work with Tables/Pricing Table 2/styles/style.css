@@ -1,0 +1,160 @@
+body {
+  margin: 0 auto;
+  width: 1200px;
+  display: flex;
+  flex-direction: column;
+  font-family: Arimo;
+  gap: 50px;
+  color: #484848;
+}
+
+button {
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+.table-wrapper {
+  margin: 25px auto;
+  background: #3a4965;
+}
+
+table {
+  margin: 25px;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  vertical-align: middle;
+  text-align: center;
+}
+
+thead th {
+  height: 100px;
+  font-weight: 700;
+}
+
+/* tbody th,
+tbody td {
+  height: 165px;
+} */
+
+/* is pseudo-class instead of upper-lines vaiant */
+tbody :is(th, td) {
+  height: 165px;
+}
+
+th:nth-child(odd),
+td:nth-child(odd) {
+  background: #fafafa;
+}
+
+th:nth-child(even),
+td:nth-child(even) {
+  background: #e3e3e3;
+}
+
+thead th {
+  border-bottom: 15px solid #3a4965;
+}
+
+thead th:first-child,
+tbody th {
+  width: 200px;
+}
+
+td {
+  width: 158px;
+}
+
+.head-title,
+tbody td div {
+  display: flex;
+  flex-direction: column;
+}
+
+.plan-variants-wrapper {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+}
+
+.plan-variants-wrapper img {
+  margin: 0 auto;
+}
+
+.head-title {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.head-main-title {
+  font-size: 14px;
+}
+
+.head-subtitle {
+  font-size: 20px;
+}
+
+tbody td div {
+  gap: 15px;
+  font-size: 16px;
+}
+
+tbody tr:nth-child(1) th {
+  background: #89c331;
+}
+
+tbody tr:nth-child(2) th {
+  background: #f04a56;
+}
+
+tbody tr:nth-child(3) th {
+  background: #20807c;
+}
+
+.conditions {
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.conditions-title {
+  margin-bottom: 13px;
+  font-size: 24px;
+  letter-spacing: 1px;
+}
+
+.conditions-price-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.conditions-price {
+  position: relative;
+  font-size: 36px;
+}
+
+.conditions-price::after {
+  position: absolute;
+  right: 0;
+  transform: translateX(100%);
+  font-size: 18px;
+  content: ".99";
+}
+
+.conditions-buy-btn {
+  padding: 10px 0 5px;
+  width: 147px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  background: #484848;
+  border-bottom: 5px solid #343434;
+}

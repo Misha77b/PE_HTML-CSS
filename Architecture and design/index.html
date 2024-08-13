@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./assets/header-logo.png"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400;500;700&family=Jost:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Open+Sans:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>Architecture and design</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <!-- nav -->
+      <div class="header__nav">
+        <a class="logo-link" href="#">
+          <img src="./assets/header-logo.png" alt="logo img" />
+          <span class="logo-text">Architect</span>
+        </a>
+
+        <!-- <nav class="nav"> -->
+        <ul class="nav-list">
+          <li class="nav-items"><a href="#">Home</a></li>
+          <li class="nav-items"><a href="#">Architecture design</a></li>
+          <li class="nav-items"><a href="#">Strange buildings</a></li>
+          <li class="nav-items"><a href="#">Magazine</a></li>
+          <li class="nav-items"><a href="#">Blog</a></li>
+          <li class="nav-items"><a href="#">News</a></li>
+        </ul>
+        <!-- </nav> -->
+        <div class="header-search">
+          <a href="#"><img src="./assets/search-icon.png" alt="search" /></a>
+        </div>
+      </div>
+      <!-- content -->
+      <div class="header__content">
+        <h2 class="header-title">THE LATEST NEWS ON DESIGN & ARCHITECTURE</h2>
+        <div class="header-btns-wrapper">
+          <button class="header-btn subscribe-btn">Subscribe Now</button>
+          <button class="header-btn best-btn">Best Articles</button>
+        </div>
+      </div>
+    </header>
+    <!-- Main -->
+    <main class="main">
+      <!-- Most Popular Posts -->
+      <div class="popular-posts-wrapper">
+        <h2 class="popular-posts-title">Most popular posts</h2>
+        <div class="posts">
+          <div class="post-card">
+            <img src="./assets/post-1.png" alt="post-img" />
+            <h2 class="post-card-text">Vanglo House By LWPAC in Canada</h2>
+          </div>
+          <div class="post-card">
+            <img src="./assets/post-2.png" alt="post-img" />
+            <h2 class="post-card-text">Royal Blossom Hotel & Spa in USA</h2>
+          </div>
+          <div class="post-card">
+            <img src="./assets/post-3.png" alt="post-img" />
+            <h2 class="post-card-text">Sunrise Expanse Hotel in USA</h2>
+          </div>
+          <div class="post-card">
+            <img src="./assets/post-4.png" alt="post-img" />
+            <h2 class="post-card-text">Sunset Shack Hotel in Spain</h2>
+          </div>
+          <div class="post-card">
+            <img src="./assets/post-5.png" alt="post-img" />
+            <h2 class="post-card-text">Stargaze Resort & Spa in USA</h2>
+          </div>
+          <div class="post-card">
+            <img src="./assets/post-6.png" alt="post-img" />
+            <h2 class="post-card-text">Glorious Expanse Hotel in France</h2>
+          </div>
+        </div>
+      </div>
+      <!-- Our most popular clients -->
+      <div class="popular-clients-wrapepr">
+        <span class="clints-title">our most popular clients</span>
+        <div class="clients-logos">
+          <img
+            src="./assets/clients-logo1.png"
+            alt="client-logo"
+            class="client-logo-img"
+          />
+          <img
+            src="./assets/clients-logo2.png"
+            alt="client-logo"
+            class="client-logo-img"
+          />
+          <img
+            src="./assets/clients-logo3.png"
+            alt="client-logo"
+            class="client-logo-img"
+          />
+          <img
+            src="./assets/clients-logo4.png"
+            alt="client-logo"
+            class="client-logo-img"
+          />
+        </div>
+      </div>
+      <!-- Top rated -->
+      <div class="top-rated-wapper">
+        <h2 class="rated-title">TOP RATED</h2>
+        <div class="rated-items-wrapper">
+          <img
+            src="./assets/rated-1.png"
+            alt="rated-img"
+            class="rated-item-img"
+          />
+          <img
+            src="./assets/rated-2.png"
+            alt="rated-img"
+            class="rated-item-img"
+          />
+          <img
+            src="./assets/rated-4.png"
+            alt="rated-img"
+            class="rated-item-img"
+          />
+          <img
+            src="./assets/rated-5.png"
+            alt="rated-img"
+            class="rated-item-img"
+          />
+          <img
+            src="./assets/rated-6.png"
+            alt="rated-img"
+            class="rated-item-img"
+          />
+          <img
+            src="./assets/rated-7.png"
+            alt="rated-img"
+            class="rated-item-img"
+          />
+          <img
+            src="./assets/rated-3.png"
+            alt="rated-img"
+            class="rated-item-img"
+          />
+        </div>
+      </div>
+      <!-- Hot news -->
+      <div class="hot-news-wrapper">
+        <h2 class="hot-news-title">HOT NEWS</h2>
+        <!-- items-grid-container -->
+        <div class="news-items">
+          <!-- item-1 -->
+          <div class="news-item item-1">
+            <img
+              class="news-img"
+              src="./assets/news-1-img.png"
+              alt="news-img"
+            />
+            <div class="news-info">
+              <h2 class="news-title">Prophecy Hotel & Spa in Emirate</h2>
+              <p class="news-descr">
+                Amazing Gabion Ideas for Outdoors A Gabion is a cage box or
+                cylinder filled with rocks, concrete, or sometimes sand and soil
+                and It is a great way to decorate your outdoor. Amazing Gabion
+                Ideas for Outdoors A Gabion is a cage box or cylinder filled
+                with rocks, concrete, or sometimes sand and soil and It is a
+                great way to decorate your outdoor
+              </p>
+            </div>
+          </div>
+          <!-- item-2 -->
+          <div class="news-item item-2">
+            <img
+              class="news-img"
+              src="./assets/news-2-img.png"
+              alt="news-img"
+            />
+            <div class="news-info">
+              <h2 class="news-title">Nebula Hotel in Spain</h2>
+            </div>
+          </div>
+          <!-- item-3 -->
+          <div class="news-item item-3">
+            <img
+              class="news-img"
+              src="./assets/news-3-img.png"
+              alt="news-img"
+            />
+            <div class="news-info">
+              <h2 class="news-title">Western Pyramid Resort in Egypt</h2>
+              <p class="news-descr">
+                Amazing Gabion Ideas for Outdoors A Gabion is a cage box or
+                cylinder filled with rocks, concrete, or sometimes sand and soil
+                and It is a great way to decorate your outdoor. Amazing Gabion
+                Ideas for Outdoors A Gabion is a cage box or cylinder filled
+                with rocks, concrete, or sometimes sand and soil and It is a
+                great way to decorate your outdoor
+              </p>
+            </div>
+          </div>
+          <!-- item-4 -->
+          <div class="news-item item-4">
+            <img
+              class="news-img"
+              src="./assets/news-4-img.png"
+              alt="news-img"
+            />
+            <div class="news-info">
+              <h2 class="news-title">Grand Meadows Resort in Maldives</h2>
+              <p class="news-descr">
+                Amazing Gabion Ideas for Outdoors A Gabion is a cage box or
+                cylinder filled with rocks, concrete, or sometimes sand and soil
+                and It is a great way to decorate your outdoor. Amazing Gabion
+                Ideas for Outdoors A Gabion is a cage box or cylinder filled
+                with rocks, concrete, or sometimes sand and soil and It is a
+                great way to decorate your outdoor
+              </p>
+            </div>
+          </div>
+          <!-- item-5 -->
+          <div class="news-item item-5">
+            <img
+              class="news-img"
+              src="./assets/news-5-img.png"
+              alt="news-img"
+            />
+            <div class="news-info">
+              <h2 class="news-title">Wanderlust Resort in Tenerife</h2>
+              <p class="news-descr">
+                Amazing Gabion Ideas for Outdoors A Gabion is a cage box or
+                cylinder filled with rocks, concrete, or sometimes sand and soil
+                and It is a great way to decorate your outdoor. Amazing Gabion
+                Ideas for Outdoors A Gabion is a cage box or cylinder filled
+                with rocks, concrete, or sometimes sand and soil and It is a
+                great way to decorate your outdoor
+              </p>
+            </div>
+          </div>
+          <!-- item-6 -->
+          <div class="news-item item-6">
+            <img
+              class="news-img"
+              src="./assets/news-6-img.png"
+              alt="news-img"
+            />
+            <div class="news-info">
+              <h2 class="news-title">Twin Sanctuary Hotel in Great Britain</h2>
+              <p class="news-descr">
+                Amazing Gabion Ideas for Outdoors A Gabion is a cage box or
+                cylinder filled with rocks, concrete, or sometimes sand and soil
+                and It is a great way to decorate your outdoor. Amazing Gabion
+                Ideas for Outdoors A Gabion is a cage box or cylinder filled
+                with rocks, concrete, or sometimes sand and soil and It is a
+                great way to decorate your outdoor
+              </p>
+            </div>
+          </div>
+          <!-- item-7 -->
+          <div class="news-item item-7">
+            <img
+              class="news-img"
+              src="./assets/news-7-img.png"
+              alt="news-img"
+            />
+            <div class="news-info">
+              <h2 class="news-title">Prism Hotel in Ireland</h2>
+            </div>
+          </div>
+          <!-- item-8 -->
+          <div class="news-item item-8">
+            <img
+              class="news-img"
+              src="./assets/news-8-img.png"
+              alt="news-img"
+            />
+            <div class="news-info">
+              <h2 class="news-title">King's Shroud Resort in Spain</h2>
+              <p class="news-descr">
+                Amazing Gabion Ideas for Outdoors A Gabion is a cage box or
+                cylinder filled with rocks, concrete, or sometimes sand and soil
+                and It is a great way to decorate your outdoor. Amazing Gabion
+                Ideas for Outdoors A Gabion is a cage box or cylinder filled
+                with rocks, concrete, or sometimes sand and soil and It is a
+                great way to decorate your outdoor
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-container">
+        <h2 class="footer-title">
+          All Rights Reserved © 2014 architect.com - Interior Design &
+          Architecture Magazine
+        </h2>
+        <img
+          src="./assets/footer-logo.png"
+          alt="footer-logo"
+          class="footer-logo-img"
+        />
+      </div>
+    </footer>
+  </body>
+</html>

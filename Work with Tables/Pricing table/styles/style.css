@@ -1,0 +1,173 @@
+body {
+  margin: 0 auto;
+  width: 1200px;
+  display: flex;
+  flex-direction: column;
+  font-family: Arimo;
+  gap: 50px;
+  color: #484848;
+}
+
+button {
+  cursor: pointer;
+}
+
+.table-wrapper {
+  margin: 20px auto;
+  padding: 25px;
+  background: #3a4965;
+}
+
+table {
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+
+td {
+  vertical-align: middle;
+  text-align: center;
+  width: 283px;
+  height: 72px;
+  font-size: 16px;
+  font-weight: 400;
+  border: 1px solid #e0dfdf;
+}
+
+th {
+  vertical-align: middle;
+  text-align: center;
+  width: 283px;
+  height: 72px;
+  background: #fafafa;
+}
+
+tr:nth-child(2) th {
+  border: 1px solid #e0dfdf;
+}
+
+tr:nth-child(1) th:not(:first-child) {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+tr:nth-child(1) th:nth-child(2) {
+  background: #89c331;
+}
+
+tr:nth-child(1) th:nth-child(3) {
+  background: #f04a56;
+}
+
+tr:nth-child(1) th:nth-child(4) {
+  background: #20807c;
+}
+
+tbody:nth-child(odd) tr:nth-child(odd) {
+  background: #f2f2f2;
+}
+
+tbody:nth-child(odd) tr:nth-child(even) {
+  background: #e3e3e3;
+}
+
+tfoot td {
+  height: 115px;
+}
+
+tfoot td:nth-child(even) {
+  background: #dfdfdf;
+}
+
+tfoot td:nth-child(odd) {
+  background: #eee;
+}
+
+tfoot td:nth-child(1) {
+  background: #dadada;
+}
+
+/* Table style by class-name */
+.table-title {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.table-title-1 {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.table-title-2 {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.price-td {
+  height: 90px;
+}
+
+.table-btns {
+  width: 195px;
+  padding: 17px 0 8px;
+  border: none;
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  border-radius: 5px;
+  border-bottom: 9px solid;
+}
+
+tfoot td:nth-child(1) .table-btns {
+  background: #484848;
+  border-color: #404040;
+}
+
+tfoot td:nth-child(2) .table-btns {
+  background: #89c331;
+  border-color: #79b027;
+}
+
+tfoot td:nth-child(3) .table-btns {
+  background: #f04a56;
+  border-color: #df3a46;
+}
+
+tfoot td:nth-child(4) .table-btns {
+  background: #20807c;
+  border-color: #16736f;
+}
+
+.section-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.price-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.price-span {
+  position: relative;
+  font-size: 60px;
+  font-weight: 700;
+}
+
+.price-span::after {
+  position: absolute;
+  right: 0;
+  transform: translate(100%, -30%);
+  font-size: 24px;
+  content: ".99";
+}
+
+.price-period {
+  font-size: 18px;
+  font-weight: 400;
+}

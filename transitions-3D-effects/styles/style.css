@@ -1,0 +1,192 @@
+.item {
+  margin: 50px auto 0;
+  width: 300px;
+  height: 300px;
+  background: lightblue;
+  border-radius: 10px 80px;
+  transition: ease-in-out 3s;
+  /* animation: animate 5s linear infinite; */
+}
+
+.item:hover {
+  transform: scale(0.5) translate(0, 50%) rotate(360deg);
+  transition: ease-in-out 3s;
+}
+
+.item:before,
+.item::after {
+  margin-top: 100px;
+  block-size: 100px;
+  border-radius: 1em;
+  content: "";
+  inline-size: 100px;
+  inset-block-start: 0;
+  inset-inline-start: 50%;
+  position: absolute;
+  /* transform: translateX(-50%); */
+  translate: -50% 0;
+}
+.item:before {
+  animation: animate 5s linear infinite;
+  background: red;
+}
+.item:after {
+  animation: animate-alt 5s linear infinite;
+  background: rgb(229, 255, 0);
+}
+
+/* All animation functions in one transform value, all reads from left ot right and do their job at that way */
+
+/* @keyframes animate {
+  10%,
+  15% {
+    transform: translateX(0);
+  }
+  16% {
+    transform: translateX(0) scale(0.5);
+  }
+  18% {
+    transform: translateX(0) scale(1.5);
+  }
+  20% {
+    transform: translateX(0) scale(1);
+  }
+  50% {
+    transform: translateX(50%) scale(1) rotate(180deg);
+  }
+  65% {
+    transform: translateX(-50%) scale(1) rotate(180deg);
+  }
+}
+
+@keyframes animate-alt {
+  10%,
+  15% {
+    transform: translateX(-150%);
+  }
+  16% {
+    transform: translateX(-150%) scale(0.5);
+  }
+  18% {
+    transform: translateX(-150%) scale(1.5);
+  }
+  20% {
+    transform: translateX(-150%) scale(1);
+  }
+  50% {
+    transform: translateX(-150%) scale(1) rotate(-180deg);
+  }
+  65% {
+    transform: translateX(-50%) scale(1) rotate(-180deg);
+  }
+} */
+
+/* New animation variant, all functions and methods of animaton are separated to differen "function" and their queue is now meaningless */
+
+@keyframes animate {
+  10%,
+  15% {
+    scale: 1;
+    translate: 0;
+  }
+  16% {
+    scale: 0.5;
+  }
+  18% {
+    scale: 1.5;
+  }
+  20% {
+    rotate: 0deg;
+    scale: 1;
+  }
+  50% {
+    rotate: 180deg;
+    translate: 50% 0;
+  }
+  65% {
+    rotate: 180deg;
+    translate: -50% 0;
+  }
+}
+
+@keyframes animate-alt {
+  10%,
+  15% {
+    scale: 1;
+    translate: -150% 0;
+  }
+  16% {
+    scale: 0.5;
+  }
+  18% {
+    scale: 1.5;
+  }
+  20% {
+    rotate: 0deg;
+    scale: 1;
+  }
+  50% {
+    rotate: -180deg;
+    translate: -150% 0;
+  }
+  65% {
+    rotate: -180deg;
+    translate: -50% 0;
+  }
+}
+
+/* button */
+.clickable-btn-wrapper {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+.clickable {
+  position: relative;
+  background: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+.front {
+  display: block;
+  padding: 12px 42px;
+  border-radius: 12px;
+  font-size: 1.4rem;
+  color: #fff;
+  background: #52b788;
+  transform: translateY(-4px);
+  transition: 250ms;
+}
+.shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  transform: translateY(2px);
+  background: #ced4da;
+  filter: blur(4px);
+}
+.edge {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  background: #2d6a4f;
+}
+.clickable:hover .front {
+  transform: translateY(-6px);
+}
+.clickable:hover .shadow {
+  transform: translateY(4px);
+}
+.clickable:active .front {
+  transform: translateY(-2px);
+}
+.clickable:active .shadow {
+  transform: translateY(1px);
+}

@@ -1,0 +1,353 @@
+body {
+  margin: 0;
+  font-family: Roboto, Sans-serif;
+  overflow-x: hidden;
+}
+
+a {
+  cursor: pointer;
+}
+
+.parallax-wrapper {
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  perspective: 10px;
+}
+
+.parallax-section {
+  position: relative;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  /* z-index: -100; */
+  transform-style: preserve-3d;
+  z-index: -1;
+}
+
+.parallax-section-1 {
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 100%, 0 90%);
+}
+
+.parallax-section-2 {
+  clip-path: polygon(50% 10%, 100% 0, 100% 100%, 0 100%, 0 0);
+}
+
+.parallax-section-3 {
+  clip-path: polygon(50% 10%, 100% 0, 100% 90%, 50% 100%, 0 90%, 0 0);
+}
+
+.prlx-backgrn {
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transform: translateZ(-10px);
+  filter: brightness(0.3);
+  z-index: -1;
+}
+
+.parallax-bg-1 {
+  background-image: url(../assets/parallax-bg-1.jpg);
+}
+
+.parallax-bg-2 {
+  background-image: url(../assets/parallax-bg-2.jpg);
+}
+
+.parallax-bg-3 {
+  background-image: url(../assets/parallax-bg-3.jpg);
+}
+
+/* .dark-layer {
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: -1;
+  background: rgba(0, 0, 0, 0.7);
+  transform: translateZ(-5px) scale(1);
+} */
+
+.header {
+  margin-top: 25px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+}
+
+.header-content-wrapper {
+  width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo {
+  padding: 40px 0;
+  font-size: 36px;
+  font-weight: 300;
+  color: #424f57;
+}
+
+.logo-colored-text {
+  font-size: 36px;
+  font-weight: 900;
+  color: #14afca;
+}
+
+.navigation-list {
+  display: flex;
+  gap: 50px;
+  font-family: "Open Sans";
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.logo-nav-link {
+  color: #3e4c4e;
+}
+
+.nav-items :is(.logo-nav-link:is(:hover, :focus)) {
+  color: #14afca;
+}
+
+.first-section-title {
+  min-width: 900px;
+  /* position: absolute; */
+  text-align: center;
+  margin-top: 175px;
+  font-size: 52px;
+  line-height: 75px;
+  font-weight: 700;
+  color: #fff;
+  /* transform: translateZ(-5px) scale(1.5); */
+}
+
+.info-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+}
+
+.blue-title {
+  margin-top: 100px;
+  font-size: 60px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #14afca;
+}
+
+.lorem-under-blue-title {
+  margin-top: 25px;
+  font-family: "Open Sans";
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.9px;
+  color: #424f57;
+}
+
+.first-info-section-text {
+  margin: 25px 20px 90px;
+  max-width: 990px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #424f57;
+}
+
+.parallax-section :is(.blue-title) {
+  /* position: absolute; */
+  margin-top: 80px;
+  /* transform: translateZ(-5px) scale(1); */
+}
+
+.parallax-section :is(.lorem-under-blue-title) {
+  margin-top: 50px;
+  /* transform: translateZ(-5px) scale(1); */
+  color: #fff;
+}
+
+.parallax-2-logos-wrapper {
+  margin-top: 150px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 120px 60px;
+  /* transform: translateZ(-5px) scale(1); */
+}
+
+.meet-us-members {
+  margin: 50px 0 120px;
+  display: flex;
+  justify-content: center;
+  gap: 70px;
+}
+
+.member-example {
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 20px;
+}
+
+.member-img {
+  height: 210px;
+  object-fit: contain;
+}
+
+.member-text {
+  color: #424f57;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.testimonials-descr {
+  margin-top: 80px;
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  font-family: OpenSans, sans-serif;
+  font-style: italic;
+  /* transform: translateZ(-5px) scale(1); */
+}
+
+.testimonials-text {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.8px;
+  color: #d3cccc;
+}
+
+.testimonial-signature {
+  margin: 35px 120px 0 0;
+  text-align: right;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.45px;
+}
+
+.formula {
+  margin-top: 50px;
+  max-width: 800px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: 0.75px;
+  color: #424f57;
+}
+
+.footer {
+  margin: 100px auto 50px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-family: "Open Sans";
+}
+
+.footer-text {
+  max-width: 400px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.7px;
+  color: #3d3c3c;
+}
+
+.footer-author-name {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.8px;
+  color: #3d3c3c;
+}
+
+/* .page {
+  width: 100vw;
+  height: 100vh;
+  perspective: 1px;
+  perspective-origin: center center;
+  overflow-x: hidden;
+}
+
+.overflow {
+  position: absolute;
+  width: 100vw;
+  height: 80vh;
+  top: 100vh;
+  background-color: #fff;
+}
+
+#parallax {
+  transform-style: preserve-3d;
+  height: 120vh;
+}
+
+.keyart_layer {
+  background-position: bottom center;
+  background-size: cover;
+  background-repeat: repeat-x;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+#keyart-0 {
+  background-image: url("https://www.firewatchgame.com/images/parallax/parallax0.png");
+  background-color: #ffaf1b;
+  transform: translate3d(-11px, -46px, -1.3px) scale(2.3);
+}
+#keyart-1 {
+  background-image: url("http://www.firewatchgame.com/images/parallax/parallax1.png");
+  transform: translate3d(0, -47px, -0.7px) scale(1.7);
+}
+#keyart-2 {
+  background-image: url("http://www.firewatchgame.com/images/parallax/parallax2.png");
+  transform: translate3d(0, -98px, -0.4px) scale(1.6);
+}
+#keyart-3 {
+  background-image: url("http://www.firewatchgame.com/images/parallax/parallax3.png");
+  transform: translate3d(0, -2px, -0.1px) scale(1.1);
+}
+#keyart-4 {
+  background-image: url("http://www.firewatchgame.com/images/parallax/parallax4.png");
+  transform: translate3d(0, 35px, 0.1px) scale(0.9);
+}
+#keyart-5 {
+  background-image: url("http://www.firewatchgame.com/images/parallax/parallax5.png");
+  transform: translate3d(0, 84px, 0.2px) scale(0.8);
+}
+#keyart-6 {
+  background-image: url("http://www.firewatchgame.com/images/parallax/parallax6.png");
+  transform: translate3d(0, 106px, 0.3px) scale(0.7);
+}
+#keyart-7 {
+  background-image: url("http://www.firewatchgame.com/images/parallax/parallax7.png");
+  transform: translate3d(0, 106px, 0.38px) scale(0.65);
+}
+#keyart-8 {
+  background-image: url("https://www.firewatchgame.com/images/parallax/parallax8.png");
+  transform: translate3d(0, 180px, 0.45px) scale(0.8);
+} */
